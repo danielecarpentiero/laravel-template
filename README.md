@@ -2,7 +2,7 @@
 
 ## Un template pronto all'uso di Laravel.
 
-### Passi da effettuare: 
+### Passi da effettuare per RIPRODURRE il template: 
 
 1. Eseguire il comando `npm remove postcss` per rimuovere PostCSS
 2. Eseguire il comando `npm i` per installare tutti i pacchetti di NPM (comprese le versioni aggiornate di `vite` e `laravel-vite-plugin`)
@@ -46,3 +46,15 @@
     3. Aggiungere la riga `'~bootstrap': path.resolve(__dirname, 'node_modules/bootstrap')` nell'oggetto `resolve.alias` nel file `vite.config.js`
     4. Aggiungere la riga `@import "~bootstrap/scss/bootstrap";` in alto nel file `resources/scss/app.scss` per importare la parte `CSS` di Bootstrap
     5. Aggiungere la riga `import * as bootstrap from 'bootstrap';` nel file `resources/js/app.js` per importare la parte `JS` di Bootstrap.
+
+### Passi da effettuare per UTILIZZARE il template:
+
+1. Aprire questa repository su github e cliccare sul pulsante `Use this template > Create a new repository`
+2. Clonare la repository appena creata su `VS Code`
+3. Aprire il `terminale`
+4. Copiare il file `.env.example` e rinominarlo in `.env`
+5. Eseguire il comando `composer install`
+6. Eseguire il comando `php artisan key:generate`
+7. Eseguire il comando `npm i` o `npm install`
+8. Aprire un secondo `terminale`
+9. In uno dei due terminali, eseguire il comando `php artisan serve`. Nell'altro, `npm run dev`
